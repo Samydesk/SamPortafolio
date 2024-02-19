@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Samuel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Seccion de inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/Img.1.jpg" alt="">
+            </div>
+            <h1>SAMUEL RAMIREZ</h1>
+            <h2>Programador Full Stack</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Samuel Ramirez </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, temporibus atque quos eum aliquam praesentium accusantium nihil molestias corporis id adipisci, nulla ex itaque a? Quo facere enim hic impedit!
+            Ipsam vero neque nam doloremque? Reiciendis laudantium nostrum, commodi inventore iure doloremque nulla architecto est necessitatibus neque dicta nisi aperiam ea animi tenetur aliquid obcaecati nam nobis, nihil omnis excepturi?</p>
+
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            31-03-2006
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +58424-197-4603
+                        </li>
+                        <li>
+                            <strong>Email Adress</strong>
+                            samiydler@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.ejemplo.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Bloque 10, la quebradita 1, Artigas
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Mis intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                            <span>COCINA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>APRENDER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>EJERCICIO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Section Habilidad-->
+    <section class="skills" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--Habilidades Tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NODE.JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GIT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FIREBASE</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>36%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TAILWIND</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Habilidades Profesionales-->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resultados</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestion de proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                <div class="item izq">
+                    <h4>Bachiller</h4>
+                    <span class="casa">U.E "Jose Antonio Paez"</span>
+                    <span class="fecha">2018 - 2023</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit iure distinctio dolore omnis magnam ipsa reiciendis saepe error, harum veritatis ut velit eligendi laudantium fuga architecto nihil unde perspiciatis libero.</p>
+                    <div class="contectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Curso Robotica I</h4>
+                    <span class="casa">EDTecnica</span>
+                    <span class="fecha">2022</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit iure distinctio dolore omnis magnam ipsa reiciendis saepe error, harum veritatis ut velit eligendi laudantium fuga architecto nihil unde perspiciatis libero.</p>
+                    <div class="contectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Programador full Stack</h4>
+                    <span class="casa">EDTecnica</span>
+                    <span class="fecha">2023 - 2024</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit iure distinctio dolore omnis magnam ipsa reiciendis saepe error, harum veritatis ut velit eligendi laudantium fuga architecto nihil unde perspiciatis libero.</p>
+                    <div class="contectori">
+                        <div class="circuloi"></div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                    <h4></h4>
+                    <span class="casa"></span>
+                    <span class="fecha"></span>
+                    <p></p>
+                    <div class="contectord">
+                        <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/img/Landing Page y 1 página más - Personal_ Microsoft​ Edge 18_2_2024 1_19_57 p. m..png" alt="">
+                    <div class="overlay">
+                        <h3>Lading Page</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/Document - Google Chrome 28_11_2023 11_42_04 a. m..png" alt="">
+                    <div class="overlay">
+                        <h3>Base De Datos Estilo Tailwindcss</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div><div class="proyecto">
+                    <img src="/img/Piedra, Papel y Tijera - Personal_ Microsoft​ Edge 18_2_2024 1_56_39 p. m..png" alt="">
+                    <div class="overlay">
+                        <h3>Piedra, Papel, tijera</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div><div class="proyecto">
+                    <img src="/img/Google - Personal_ Microsoft​ Edge 18_2_2024 1_58_53 p. m..png" alt="">
+                    <div class="overlay">
+                        <h3>Replica de Inicio Google</h3>
+                        <p>Fotografia</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero Telefonico">
+                    <input type="text" placeholder="Direccion de Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--mapa-->
+                <div class="col">
+                    <img src="/img/Google Maps - Google Chrome 18_2_2024 2_38_51 p. m..png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Venezuela, Distrito Capital, Caracas, Artigas la quebradita 1
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame a: 0424-197-4603
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: samiydler@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
